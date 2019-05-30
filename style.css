@@ -1,0 +1,160 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Arial", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  padding: 5px;
+  background-color: rgb(244, 244, 244);
+  border-bottom: 1px solid rgb(214, 214, 214);
+  box-shadow: 0px 2px 0px 0px rgba(107, 107, 107, 0.2);
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  margin: 45px auto 15px;
+  width: 918px;
+}
+
+header button {
+  background-color: rgb(0, 111, 202);
+  border: none;
+  font-weight: bold;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 7px;
+  border-radius: 4px;
+}
+
+div.loupe {
+  display: inline-block;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: rgb(147, 147, 147);
+  margin-right: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdownList {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  max-width: 210px;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-top: 15px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+#dropdownList p {
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 918px;
+  margin: 15px auto;
+}
+
+#monthYear {
+  width: 140px;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+#minus {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+nav button {
+  padding: 0 4px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button#today {
+  margin-left: 13px;
+}
+
+.tooltip{
+  background: black;
+  font-family: "DejaVu Sans", sans-serif;
+  font-size: 13px;
+  color: white;
+  padding: 5px;
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+  border-radius: 10px; */
+  opacity: 0;
+}
+
+#calendar {
+  width: 918px;
+  line-height: 1.2em;
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid rgb(238, 238, 238);
+  margin: auto;
+}
+
+#calendar thead th, td {
+  font-weight: normal;
+  border: 1px solid rgb(238, 238, 238);
+}
+
+#calendar thead th, tbody td {
+  width: 110px;
+  height: 110px;
+  padding: 10px;
+  vertical-align: top;
+}
+
+#calendar thead th.today, #calendar tbody td.today {
+  background: rgb(244, 244, 244);
+}
+
+#calendar thead th.event, #calendar tbody td.event {
+  background: rgb(193, 228, 255);
+}
+
+p.today, p.event {
+  color: #000000;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+p.event {
+  margin-bottom: 0.25em;
+}
